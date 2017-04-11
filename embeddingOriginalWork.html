@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Peggie's Website</title>
+    </head>
+    <body>
+        <h1>Youtube Video</h1>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/V9FpUSigyX8" frameborder="0" allowfullscreen></iframe>
+        <h1>Sichuan</h1>
+        <div style="background-color:black;color:white;padding:20px;">
+        <h2>Sichuan</h2>
+        <p>Sichuan, formerly romanized Szechuan, is a province in southwest China occupying most of the Sichuan Basin between the Himalayas on the west, the Daba Mountains in the north, and the Yungui Plateau to the east. Sichuan's capital city is Chengdu..</p>
+        <p>Sichuan cuisine often contains food preserved through pickling, salting, and drying. Preserved dishes are generally served as spicy dishes with heavy application of chili oil.</p>
+    </div> 
+        <h1>Google Map</h1>
+        <div id="googleMap" style="width:400px;height:400px"></div>
+        <script>
+        function myMap() {
+        var mapProp= {
+            center:new google.maps.LatLng(51.508742,-0.120850),
+            zoom:5,
+    };
+    var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+    }
+    </script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDn5KWmyOYJF7iuP5vgrs7elEhzDVeOBIw&callback=myMap"></script>
+    <!--
+    </body>
+</html>
